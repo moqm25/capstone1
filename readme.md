@@ -4,9 +4,12 @@ This repository contains the necessary files and data for our project. Here's a 
 
 ## Root Directory
 
-- `.gitignore`: This file is used to exclude certain files from the Git repository.
 - `readme.md`: This is the file you're currently reading. It provides an overview of the project directory.
-- `ultimate_WRF_script.py`: This Python script is used to run the Weather Research and Forecasting (WRF) model.
+- `ultimate_WRF_script.py`: **This is the main Python script** used for the following purposes:
+    - Obtain the Ground Truth Data and plot it.
+    - Run the Weather Research and Forecasting (WRF) model. 
+    - Obtain the output data from the WRF Model and plot it.
+    - Create a plot which compares the Ground Truth and Model Predictions.
 - `upload_to_github.py`: This Python script is used to upload files to the GitHub repository.
 
 ## Experimental Scripts
