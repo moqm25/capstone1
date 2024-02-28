@@ -119,7 +119,7 @@ def show_run(name, output_dir):
     run = np.load(output_dir + name + '.npy')
     plt.clf()
     plt.plot(run[:,0], run[:,1], label = "SWDOWN")
-    plt.plot(run[:,0], run[:,4], label = "DIR + DIF")
+    # plt.plot(run[:,0], run[:,4], label = "DIR + DIF")
     plt.xlabel('Time (hours)')  # x-axis label
     plt.ylabel('Solar Irradiance (W/m^2)')  # y-axis label
     plt.title('WRF Output')  # title
@@ -166,7 +166,7 @@ if __name__ == '__main__':
     # Process the WRF Data
     # copy_files(SRC_PATH, DEST_PATH)
     # process(DEST_PATH, OUTPUT_DIR, 'base_model_pred')
-    # show_run('base_model_pred', OUTPUT_DIR)
+    show_run('base_model_pred', OUTPUT_DIR)
 
     # Plot Ground Truth and Model Predictions
-    plot_GT_and_model(GTDIR, OUTPUT_DIR, 'base_model_pred')
+    # plot_GT_and_model(GTDIR, OUTPUT_DIR, 'base_model_pred')
