@@ -3,6 +3,8 @@ import netCDF4
 import numpy as np
 import os
 
+# script was used in: /home/capstonei/CS492_Tasks/ground_truth
+
 def get_GT():
     GTDIR = '/home/capstonei/CS492_Tasks/ground_truth/'
     os.chdir(GTDIR)

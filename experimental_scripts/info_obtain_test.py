@@ -1,5 +1,7 @@
 import netCDF4
 
+# Script was used in /home/capstonei/CS492_Tasks/WRF-Data-netCDF4
+
 def display_variables(nc_file):
     nc = netCDF4.Dataset(nc_file)
     print("Variables in the .nc file:")

@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 import shutil
 import subprocess
 
+# Script was used in: /home/capstonei/CS492_Tasks
+
+
 time_regex = re.compile(r"wrfout_d01_2009-05-(\d\d)_(\d\d):(\d\d):(\d\d)")  
 
 PATH="/home/capstonei/CS492_Tasks"
