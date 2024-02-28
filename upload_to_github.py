@@ -1,6 +1,10 @@
 import subprocess
+import os
 
 try:
+    PATH = "/home/capstonei/CS492_Tasks"
+    os.chdir(PATH)
+
     # Add all changes to staging
     subprocess.run(["git", "add", "."])
 
