@@ -208,3 +208,5 @@ if __name__ == '__main__':
 
     # Plot Ground Truth and Model Predictions
     # plot_GT_and_model(GTDIR, OUTPUT_DIR, 'base_model_pred')
+    result = Bayesian_Opt(10,123)
+    print(result)
