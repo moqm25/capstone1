@@ -157,10 +157,13 @@ def plot_GT_and_model(GTDIR, output_dir, model_pred_name):
 
 
 def get_swtot(GTDIR):
-    gt_data = xr.open_dataset(GTDIR)
+    # Define the full path of the NetCDF file
+    nc_file = os.path.join(GTDIR, 'sgpradflux10long_area_mean.c2.20090506_1200UTC.nc')
+    gt_data = xr.open_dataset(nc_file, engine='netcdf4')
     solar_irradiance_data = gt_data['obs_swdtot']
     gt_swdtot = solar_irradiance_data.values
     return gt_swdtot
+
 
 space  = [Real(1.02e20, 1.67e24, name='beta_con'),
           Real(0.01, 1.4, name='vdis')]
