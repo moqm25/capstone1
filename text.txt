@@ -1,0 +1,39 @@
+0.6047302522645692 1.1896207452407318e+24
+23991.335784212388
+BEST PARAMS: [1.1906646638310961e+24, 0.6055745873996878]
+EVAL: 23991.335784212388
+          fun: 23991.335784212388
+            x: [1.1906646638310961e+24, 0.6055745873996878]
+    func_vals: [ 2.399e+04  2.399e+04  2.399e+04  2.399e+04  2.399e+04
+                 2.399e+04  2.399e+04  2.399e+04  2.399e+04  2.399e+04]
+      x_iters: [[1.1906646638310961e+24, 0.6055745873996878], [1.1538092376396464e+24, 1.0096189311151347], [8.202205247012275e+23, 1.0942385890577901], [6.863037881380454e+23, 0.8157750728614281], [2.338054986149539e+23, 0.567414403759073], [1.0476574192588676e+24, 0.4605697417975621], [4.088250270667969e+23, 0.975709696287524], [9.918584294108529e+23, 0.8881909045850002], [7.35286581134845e+23, 0.12637981354338224], [1.1896207452407318e+24, 0.6047302522645692]]
+       models: [GaussianProcessRegressor(kernel=1**2 * Matern(length_scale=[1, 1], nu=2.5) + WhiteKernel(noise_level=0.1),
+                                        n_restarts_optimizer=2, noise=0.1, normalize_y=True,
+                                        random_state=843828734)]
+        space: Space([Real(low=1.02e+20, high=1.67e+24, prior='uniform', transform='normalize'),
+                      Real(low=0.01, high=1.4, prior='uniform', transform='normalize')])
+ random_state: RandomState(MT19937)
+        specs:     args:                    func: <function objective at 0x7fe399b75c10>
+                                      dimensions: Space([Real(low=1.02e+20, high=1.67e+24, prior='uniform', transform='normalize'),
+                                                         Real(low=0.01, high=1.4, prior='uniform', transform='normalize')])
+                                  base_estimator: GaussianProcessRegressor(kernel=1**2 * Matern(length_scale=[1, 1], nu=2.5),
+                                                                           n_restarts_optimizer=2, noise=0.1, normalize_y=True,
+                                                                           random_state=843828734)
+                                         n_calls: 10
+                                 n_random_starts: None
+                                n_initial_points: 10
+                         initial_point_generator: random
+                                        acq_func: EI
+                                   acq_optimizer: auto
+                                              x0: None
+                                              y0: None
+                                    random_state: RandomState(MT19937)
+                                         verbose: False
+                                        callback: None
+                                        n_points: 10000
+                            n_restarts_optimizer: 5
+                                              xi: 0.01
+                                           kappa: 1.96
+                                          n_jobs: 1
+                                model_queue_size: None
+               function: base_minimize
